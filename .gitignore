@@ -38,3 +38,7 @@ coverage/
 
 # Storybook
 storybook-static/
+
+# Internal documentation
+DEPLOYMENT.md
+PUBLICATION_CHECKLIST.md
