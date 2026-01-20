@@ -1,0 +1,46 @@
+# Source files (dist is what gets published)
+src/
+examples/
+docs/
+
+# Development files
+.storybook/
+tsconfig.json
+tsup.config.ts
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+coverage/
+.nyc_output/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.*
+
+# Build artifacts
+storybook-static/
+*.tsbuildinfo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation (available on GitHub)
+docs/
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md

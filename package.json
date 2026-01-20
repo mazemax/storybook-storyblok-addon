@@ -1,0 +1,78 @@
+{
+  "name": "storybook-storyblok-addon",
+  "version": "1.0.0",
+  "description": "Storybook addon to copy component blocks to Storyblok CMS",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./preset": {
+      "require": "./dist/preset.js",
+      "import": "./dist/preset.mjs",
+      "types": "./dist/preset.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "type-check": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepublishOnly": "npm run build && npm run type-check"
+  },
+  "keywords": [
+    "storybook",
+    "storybook-addon",
+    "addon",
+    "storyblok",
+    "cms",
+    "component",
+    "metadata",
+    "design-system",
+    "visual-editor",
+    "blocks"
+  ],
+  "author": "Max Saad",
+  "license": "MIT",
+  "homepage": "https://github.com/mazemax/storybook-storyblok-addon#readme",
+  "dependencies": {
+    "@storybook/addons": "^6.5.16",
+    "@storybook/api": "^6.5.16",
+    "@storybook/components": "^6.5.16",
+    "@storybook/theming": "^6.5.16"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@storybook/vue3": "^6.5.16",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.0",
+    "vue": "^3.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mazemax/storybook-storyblok-addon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mazemax/storybook-storyblok-addon/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
