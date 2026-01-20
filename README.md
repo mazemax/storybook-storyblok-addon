@@ -1,9 +1,19 @@
-# Storybook Storyblok Addon (storybook-storyblok-addon)
+<div align="center">
+
+<img src="docs/storyblok-storybook.png" alt="Storybook + Storyblok" width="600"/>
+
+# Storybook Storyblok Addon
+
+### Copy components from Storybook, paste into Storyblok
 
 [![npm version](https://badge.fury.io/js/storybook-storyblok-addon.svg)](https://www.npmjs.com/package/storybook-storyblok-addon)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A Storybook addon that enables copying component blocks from Storybook and pasting them directly into the Storyblok visual editor. Perfect for design teams who want to quickly add pre-configured components to their Storyblok pages.
+</div>
+
+---
+
+A Storybook addon that enables seamless component transfer from Storybook to Storyblok's visual editor. Copy pre-configured component blocks with one click and paste them directly into your Storyblok pages—perfect for design teams working with design systems.
 
 ## Features
 
