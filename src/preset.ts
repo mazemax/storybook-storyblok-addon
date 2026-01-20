@@ -4,4 +4,8 @@
  * This preset automatically registers the addon's manager entry when installed.
  */
 
-export const managerEntries = [require.resolve('./index')]
+// Reference the built manager entry file
+// When bundled, this will resolve to the correct path in the dist directory
+export const managerEntries = () => {
+  return ['storybook-storyblok-addon/dist/index.js']
+}
