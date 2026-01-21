@@ -1,6 +1,6 @@
 {
   "name": "storybook-storyblok-addon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Storybook addon to copy component blocks to Storyblok CMS",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -31,20 +31,39 @@
     "prepublishOnly": "npm run build && npm run type-check"
   },
   "keywords": [
+    "storybook-addons",
     "storybook-addon",
     "storybook",
+    "addon",
     "storyblok",
     "cms",
     "component",
     "design-system",
     "visual-editor",
-    "blocks"
+    "blocks",
+    "integration"
   ],
   "storybook": {
     "displayName": "Storyblok",
     "icon": "https://raw.githubusercontent.com/mazemax/storybook-storyblok-addon/main/docs/storyblok-storybook.png",
     "supportedFrameworks": [
-      "vue"
+      "vue3"
+    ],
+    "unsupportedFrameworks": [
+      "react",
+      "angular",
+      "web-components",
+      "ember",
+      "html",
+      "svelte",
+      "preact",
+      "qwik",
+      "solid"
+    ],
+    "tags": [
+      "cms",
+      "integration",
+      "export"
     ]
   },
   "author": "Max Saad",
